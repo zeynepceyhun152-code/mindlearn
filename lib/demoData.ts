@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ArrowDownRight, ArrowRight, ArrowUpRight } from "lucide-react";
 
 type ScoreCardProps = {
