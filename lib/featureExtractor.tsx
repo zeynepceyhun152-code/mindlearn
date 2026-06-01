@@ -44,7 +44,11 @@ export function StateChart({ entries }: { entries: LearningEntry[] }) {
   );
 }
 
-// Keeping a simple export fallback just in case other backend files try to import a default feature function from here
-export function extractFeatures(inputData: any) {
+// SAFE BACKEND FALLBACK: This stops demoData.ts and route.ts from crashing 
+// when they look for a default function export!
+export default function extractFeatures(inputData: any) {
+  return inputData;
+}
+export function extractFeaturesNamed(inputData: any) {
   return inputData;
 }
