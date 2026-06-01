@@ -43,3 +43,8 @@ export function StateChart({ entries }: { entries: LearningEntry[] }) {
     </div>
   );
 }
+
+// Keeping a simple export fallback just in case other backend files try to import a default feature function from here
+export function extractFeatures(inputData: any) {
+  return inputData;
+}
