@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS users (
+/*CREATE TABLE IF NOT EXISTS users (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
@@ -27,3 +27,4 @@ CREATE TABLE IF NOT EXISTS learning_state (
 
 CREATE INDEX IF NOT EXISTS idx_checkins_user_created ON checkins(user_id, created_at);
 CREATE INDEX IF NOT EXISTS idx_learning_state_user_timestamp ON learning_state(user_id, timestamp);
+*/
